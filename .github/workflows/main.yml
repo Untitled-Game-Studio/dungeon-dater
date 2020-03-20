@@ -24,6 +24,8 @@ jobs:
 
     - name: Lint Ren'Py Project
       uses: ProjectAliceDev/renpy-lint-action@v1.1.0
+      env:
+        SDL_AUDIODRIVER: dummy
 
     - name: Build Ren'Py Project
       uses: ProjectAliceDev/renpy-build-action@v1.1.1

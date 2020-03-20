@@ -29,3 +29,6 @@ jobs:
 
     - name: Build Ren'Py Project
       uses: ProjectAliceDev/renpy-build-action@v1.1.1
+      env:
+        SDL_AUDIODRIVER: dummy
+        SDL_VIDEODRIVER: dummy
